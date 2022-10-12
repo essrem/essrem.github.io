@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>天生我材必有用</description>
-    <pubDate>Wed, 12 Oct 2022 07:38:44 GMT</pubDate>
+    <pubDate>Wed, 12 Oct 2022 07:43:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,7 @@
       
       
       
-      <content:encoded><![CDATA[<h1 id="测试内容"><a href="#测试内容" class="headerlink" title="测试内容"></a>测试内容</h1><span id="more"></span><p>更多</p>.jpg)]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="测试内容"><a href="#测试内容" class="headerlink" title="测试内容"></a>测试内容</h1><span id="more"></span><p>更多</p><img src="/2022/10/12/title/10/12/title/essrem.jpg" class title="essrem">]]></content:encoded>
       
       
       
