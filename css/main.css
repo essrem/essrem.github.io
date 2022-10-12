@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #79700a;
+  background: #784539;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2459,7 +2459,7 @@ embed {
   white-space: nowrap;
 }
 body {
-  background: url("D:Steamsteamappsworkshopcontent431960973101892preview.jpg");
+  background: url("/images/essrem.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
