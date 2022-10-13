@@ -4,9 +4,9 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rose&#39;s Blog</title>
-    <link>http://example.com/</link>
+    <link>https://yztroseblog.com/</link>
     
-    <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://yztroseblog.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>纸上得来终觉浅，绝知此事要躬行</description>
     <pubDate>Thu, 13 Oct 2022 06:50:56 GMT</pubDate>
@@ -14,8 +14,8 @@
     
     <item>
       <title>vue-01</title>
-      <link>http://example.com/2022/10/13/vue-01/</link>
-      <guid>http://example.com/2022/10/13/vue-01/</guid>
+      <link>https://yztroseblog.com/2022/10/13/vue-01/</link>
+      <guid>https://yztroseblog.com/2022/10/13/vue-01/</guid>
       <pubDate>Thu, 13 Oct 2022 06:27:52 GMT</pubDate>
       
       <description>&lt;h4 id=&quot;用Vue创建实例&quot;&gt;&lt;a href=&quot;#用Vue创建实例&quot; class=&quot;headerlink&quot; title=&quot;用Vue创建实例&quot;&gt;&lt;/a&gt;用Vue创建实例&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; vm = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Vue&lt;/span&gt;(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;// 属性&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -30,20 +30,20 @@
       <content:encoded><![CDATA[<h4 id="用Vue创建实例"><a href="#用Vue创建实例" class="headerlink" title="用Vue创建实例"></a>用Vue创建实例</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line"><span class="comment">// 属性</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ul><li>Vue的设计受到MVVM模型的启发，因此经常用vm（ViewModel）来表示Vue实例。</li><li>所有的 Vue 组件都是 Vue 实例，并且接受相同的选项对象 (一些根实例特有的选项除外)</li></ul><span id="more"></span><h4 id="数据与方法"><a href="#数据与方法" class="headerlink" title="数据与方法"></a>数据与方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 我们的数据对象</span></span><br><span class="line"><span class="keyword">var</span> data = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 该对象被加入到一个 Vue 实例中</span></span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">data</span>: data</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获得这个实例上的 property</span></span><br><span class="line"><span class="comment">// 返回源数据中对应的字段</span></span><br><span class="line">vm.<span class="property">a</span> == data.<span class="property">a</span> <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置 property 也会影响到原始数据</span></span><br><span class="line">vm.<span class="property">a</span> = <span class="number">2</span></span><br><span class="line">data.<span class="property">a</span> <span class="comment">// =&gt; 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ……反之亦然</span></span><br><span class="line">data.<span class="property">a</span> = <span class="number">3</span></span><br><span class="line">vm.<span class="property">a</span> <span class="comment">// =&gt; 3</span></span><br></pre></td></tr></table></figure><ul><li>当这些数据改变时，视图会进行重渲染。值得注意的是只有当实例被创建时就已经存在于 <code>data</code> 中的 property 才是<strong>响应式</strong>的。</li><li>如果你知道你会在晚些时候需要一个 property，但是一开始它为空或不存在，那么你仅需要设置一些初始值。比如：</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">data</span>: &#123;</span><br><span class="line">  <span class="attr">newTodoText</span>: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">  <span class="attr">visitCount</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">hideCompletedTodos</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">todos</span>: [],</span><br><span class="line">  <span class="attr">error</span>: <span class="literal">null</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>除了数据 property，Vue 实例还暴露了一些有用的实例 property 与方法。它们都有前缀 <code>$</code>，以便与用户定义的 property 区分开来。例如：</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var data = &#123; a: 1 &#125;</span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  el: &#x27;#example&#x27;,</span><br><span class="line">  data: data</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">vm.$data === data // =&gt; true</span><br><span class="line">vm.$el === document.getElementById(&#x27;example&#x27;) // =&gt; true</span><br><span class="line"></span><br><span class="line">// $watch 是一个实例方法</span><br><span class="line">vm.$watch(&#x27;a&#x27;, function (newValue, oldValue) &#123;</span><br><span class="line">  // 这个回调将在 `vm.a` 改变后调用</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h4><p><img src="https://v2.cn.vuejs.org/images/lifecycle.png"></p><ul><li>比如 <a href="https://v2.cn.vuejs.org/v2/api/#created"><code>created</code></a> 钩子可以用来在一个实例被创建之后执行代码：</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">a</span>: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">created</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">// `this` 指向 vm 实例</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;a is: &#x27;</span> + <span class="variable language_">this</span>.<span class="property">a</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// =&gt; &quot;a is: 1&quot;</span></span><br></pre></td></tr></table></figure><ul><li>也有一些其它的钩子，在实例生命周期的不同阶段被调用，如 <a href="https://v2.cn.vuejs.org/v2/api/#mounted"><code>mounted</code></a>、<a href="https://v2.cn.vuejs.org/v2/api/#updated"><code>updated</code></a> 和 <a href="https://v2.cn.vuejs.org/v2/api/#destroyed"><code>destroyed</code></a>。生命周期钩子的 <code>this</code> 上下文指向调用它的 Vue 实例。</li><li>不要在选项 property 或回调上使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions">箭头函数</a>，比如 <code>created: () =&gt; console.log(this.a)</code> 或 <code>vm.$watch(&#39;a&#39;, newValue =&gt; this.myMethod())</code>。因为箭头函数并没有 <code>this</code>，<code>this</code> 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致 <code>Uncaught TypeError: Cannot read property of undefined</code> 或 <code>Uncaught TypeError: this.myMethod is not a function</code> 之类的错误。</li></ul>]]></content:encoded>
       
       
-      <category domain="http://example.com/categories/Java/">Java</category>
+      <category domain="https://yztroseblog.com/categories/Java/">Java</category>
       
       
-      <category domain="http://example.com/tags/vue/">vue</category>
+      <category domain="https://yztroseblog.com/tags/vue/">vue</category>
       
       
-      <comments>http://example.com/2022/10/13/vue-01/#disqus_thread</comments>
+      <comments>https://yztroseblog.com/2022/10/13/vue-01/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://example.com/2022/10/11/hello-world/</link>
-      <guid>http://example.com/2022/10/11/hello-world/</guid>
+      <link>https://yztroseblog.com/2022/10/11/hello-world/</link>
+      <guid>https://yztroseblog.com/2022/10/11/hello-world/</guid>
       <pubDate>Tue, 11 Oct 2022 08:45:56 GMT</pubDate>
       
         
@@ -58,7 +58,7 @@
       
       
       
-      <comments>http://example.com/2022/10/11/hello-world/#disqus_thread</comments>
+      <comments>https://yztroseblog.com/2022/10/11/hello-world/#disqus_thread</comments>
       
     </item>
     
