@@ -9,8 +9,34 @@
     <atom:link href="https://yztroseblog.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>纸上得来终觉浅，绝知此事要躬行</description>
-    <pubDate>Sat, 22 Oct 2022 08:54:48 GMT</pubDate>
+    <pubDate>Tue, 25 Oct 2022 08:59:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Java设计模式--工厂模式</title>
+      <link>https://yztroseblog.com/2022/10/25/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</link>
+      <guid>https://yztroseblog.com/2022/10/25/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</guid>
+      <pubDate>Tue, 25 Oct 2022 08:55:55 GMT</pubDate>
+      
+      <description>&lt;h1 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。&lt;/li&gt;
+&lt;li&gt;在工厂模式中，我们在创建对象时不会对客户端暴露创建逻辑，并且是通过使用一个共同的接口来指向新创建的对象。&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h1><ul><li>工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。</li><li>在工厂模式中，我们在创建对象时不会对客户端暴露创建逻辑，并且是通过使用一个共同的接口来指向新创建的对象。</li></ul><span id="more"></span><p><img src="/2022/10/25/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/AB6B814A-0B09-4863-93D6-1E22D6B07FF8.jpg" alt="工厂模式的 UML 图"></p>]]></content:encoded>
+      
+      
+      <category domain="https://yztroseblog.com/categories/Java/">Java</category>
+      
+      
+      <category domain="https://yztroseblog.com/tags/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">Java设计模式</category>
+      
+      
+      <comments>https://yztroseblog.com/2022/10/25/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>多线程交替打印问题</title>
